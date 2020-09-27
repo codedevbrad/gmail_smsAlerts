@@ -1,0 +1,41 @@
+{
+  "name": "node-js-getting-started",
+  "version": "0.3.0",
+  "description": "A sample Node.js app using Express 4",
+  "engines": {
+    "node": "12.x"
+  },
+  "main": "src/server.js",
+  "scripts": {
+    "server:dry": "node src/server.js",
+    "server:watch": "nodemon bin/dev"
+  },
+  "dependencies": {
+    "@codedevbrad/better_date": "file:../../14. published_npm_packages ( npm )/09. date_package ( npm )/package",
+    "@codedevbrad/serverutils": "^1.0.2",
+    "axios": "^0.20.0",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^5.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.15.2",
+    "express-session": "^1.17.1",
+    "firebase-functions": "^3.11.0",
+    "mongoose": "^5.9.5",
+    "morgan": "^1.9.1",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "twilio": "^3.49.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "dotenv": "^8.2.0",
+    "mocha": "^7.1.1"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}
