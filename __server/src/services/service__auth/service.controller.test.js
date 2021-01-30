@@ -26,11 +26,6 @@ exports.getUsersToken = ( req , res , next ) => {
         .catch( err => res.status( 500 ).send( err  ) );
 }
 
-exports.token_async = asyncSupport( async ( req , res , next ) => {
-    let users = await getUsersToken();
-    res.status( 200 ).send( users );
-});
-
 
 // === IN APP === //
 

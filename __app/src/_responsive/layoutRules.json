@@ -1,6 +1,0 @@
-
-{
-   "l" : [ { max: '1920px' , min: '600px' } , 'responsive_large'  } ] ,
-   "m" : [ { max: '599px'  , min: '301px' } , 'responsive_medium' } ] ,
-   "s" : [ { max: '300px'  , min: '0px'   } , 'responsive_small'  } ]
-}

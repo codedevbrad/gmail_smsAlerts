@@ -7,11 +7,11 @@
   },
   "main": "src/server.js",
   "scripts": {
+    "start": "node src/server.js",
     "server:dry": "node src/server.js",
     "server:watch": "nodemon bin/dev"
   },
   "dependencies": {
-    "@codedevbrad/better_date": "file:../../14. published_npm_packages ( npm )/09. date_package ( npm )/package",
     "@codedevbrad/serverutils": "^1.0.2",
     "axios": "^0.20.0",
     "bcryptjs": "^2.4.3",

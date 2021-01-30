@@ -4,6 +4,7 @@ const UsersSchema = new mongoose.Schema ({
   username:    { type: String } ,
   password:    { type: String } ,
   emailparsed: { type: String } ,
+  isNewUser:   { type: Boolean } ,
   access: {
       token:  String ,
       expiry: String

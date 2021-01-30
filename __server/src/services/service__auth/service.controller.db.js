@@ -1,7 +1,7 @@
 
 const Users = require('./service.model');
 
-// === IN-APP == //
+// === IN-APP : user sigmnup == //
 
 function getUserFromDB ( ) {
     return Users.findById( { _id: req.user._id } )
@@ -14,7 +14,7 @@ function getUsersFromDB ( ) {
 }
 
 function updateUserToken ( accessObj ) {
-     return Users.findByIdandUpdate( { _id: req.user._id } , { access : accessObj } , { new : true } )
+    return Users.findByIdandUpdate( { _id: req.user._id } , { access : accessObj } , { new : true } )
 }
 
 async function awaitgetUsers ( ) {
@@ -26,7 +26,13 @@ async function awaitgetUsers ( ) {
     }
 }
 
-// === SERVERLESS === //
+// == IN-APP : user features == //
+
+function updateUserFromDB ( user , object ) {
+    return Users.findByIdandUpdate( { _id: user } , object , { new : true } ).select('-password');
+}
+
+// ===== SERVERLESS ===== //
 
 const getUsersToken = ( ) => {
     return Users.find( )
@@ -41,6 +47,10 @@ const updateUsersenders = ( id , object ) => {
 
 const findId_error = async ( id ) => {
     return Users.findById( { number : '12' } )
+}
+
+module.exports.userUpdates = {
+    updateUserFromDB
 }
 
 

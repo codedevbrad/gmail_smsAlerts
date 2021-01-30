@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "nativetutorial",
+    "slug": "app",
+    "version": "1.0.0",
+    "orientation": "default",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true ,
+      "bundleIdentifier": "com.webiosandroid.all" , 
+      "config": {
+          "googleSignIn": {
+              "reservedClientId": "com.googleusercontent.apps.344214017694-kah4mb0t8f5bdsidb8oc5f8nv472de4a"
+          }
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
